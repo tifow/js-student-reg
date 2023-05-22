@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: space-between;
+            background: #34ffff;
+
+            width: 100%;
+
+        }
+        .fullname{
+            padding: 20px;
+            border-radius: 10px;
+            width: 380px;
+            background: #eee;
+            margin-left: 10px;
+            margin-top: 20px;
+            position: fixed;
+        }
+        .name{
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 10px;
+            margin: 5px;
+            font-weight: 200;
+            color: rgb(77, 74, 74);
+            border-radius: 5px;
+
+        }
+        .btn{
+            background: #34ffff;
+            color: rgb(48, 44, 44);
+            width: 100px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .btn:hover{
+            background: blue;
+            color: antiquewhite;
+        }
+        h2{
+            text-align: center;
+            font-family:sans-serif;
+        }
+        .output{
+            width: 68.9%;
+            background: white;
+            margin-top: 20px;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+        .table{
+            width: 100%;
+            padding:10px 0;
+            border-collapse: collapse;
+            border: 1px solid #34ffff;
+        }
+        .table tr{
+            width: 100%;
+            text-align: center;
+
+        }
+        .table tr td:first-child{
+            text-align: left;
+        }
+        .table th{
+            background: #9ee7e7;
+            padding: 10px;
+        }
+        .table td{
+            background: transparent;
+            padding: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="fullname">
+            <h2>student exam</h2>
+            <input type="text" class="std name" placeholder="student name " id="name"><br><br>
+            <input type="number" class="sub1 name" placeholder="subject one " id="sub1"><br><br>
+            <input type="number" class="sub2 name" placeholder="subject two " id="sub2"><br><br>
+            <input type="number" class="sub3 name" placeholder="subject three " id="sub3"><br><br>
+            <input type="number" class="sub4 name" placeholder="subject four " id="sub4"><br><br>
+        <input type="submit" value="save" class="btn">
+        </div>
+
+    </form>
+        <div class="output">
+            <table class="table">
+                <tr>
+                    <th>std name</th>
+                    <th>sub one</th>
+                    <th>sub two</th>
+                    <th>sub three</th>
+                    <th>sub four</th>
+                    <th>total</th>
+                    <th>avg</th>
+                    <th>grate</th>
+                </tr>
+            </table>
+        </div>
+</body>
+
+
+<script src="forms.js">
+</script>
+
+</html>
